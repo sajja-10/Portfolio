@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sajja's Portfolio</title>
   <style>
-
-
     /**
  * copyright 2022 @codewithsadee
  */
@@ -1908,7 +1906,7 @@
       }
 
     }
-</style>
+  </style>
 
 
   <!--
@@ -1916,7 +1914,7 @@
   -->
   <link rel="shortcut icon" href="./assets/image/sajja_icon.png" type="image/png">
 
- 
+
 
   <!--
     - google font link
@@ -1994,20 +1992,20 @@
 
           </li>
 
-            <li class="contact-item">
-  
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-  
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-  
-                <address>Kushma, Gandaki, Nepal</address>
-              </div>
-  
-            </li>
-  
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kushma, Gandaki, Nepal</address>
+            </div>
+
+          </li>
+
         </ul>
 
         <div class="separator"></div>
@@ -2121,8 +2119,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/image/python.png"
-                  alt="design icon" width="40">
+                <img src="./assets/image/python.png" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -2518,8 +2515,7 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="./assets/blog/House.html"
-              <link href="#">
+              <a href="./assets/blog/House.html" <link href="#">
                 <figure class="blog-banner-box">
                   <img src="./assets/image/House.jpg" alt=" Gap Year" loading="lazy">
                 </figure>
@@ -2603,166 +2599,166 @@
   <!--
     - custom js link
   -->
-  <script >
+  <script>
     'use strict';
 
 
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+    // element toggle function
+    const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    // sidebar variables
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// x variables
-const xItem = document.querySelectorAll("[data-x-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const xModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < xItem.length; i++) {
-
-  xItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-x-avatar]").src;
-    modalImg.alt = this.querySelector("[data-x-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-x-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-x-text]").innerHTML;
-
-    xModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", xModalFunc);
-overlay.addEventListener("click", xModalFunc);
+    // sidebar toggle functionality for mobile
+    sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
 
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+    // x variables
+    const xItem = document.querySelectorAll("[data-x-item]");
+    const modalContainer = document.querySelector("[data-modal-container]");
+    const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+    const overlay = document.querySelector("[data-overlay]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+    // modal variable
+    const modalImg = document.querySelector("[data-modal-img]");
+    const modalTitle = document.querySelector("[data-modal-title]");
+    const modalText = document.querySelector("[data-modal-text]");
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
+    // modal toggle function
+    const xModalFunc = function () {
+      modalContainer.classList.toggle("active");
+      overlay.classList.toggle("active");
     }
 
-  }
+    // add click event to all modal items
+    for (let i = 0; i < xItem.length; i++) {
 
-}
+      xItem[i].addEventListener("click", function () {
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+        modalImg.src = this.querySelector("[data-x-avatar]").src;
+        modalImg.alt = this.querySelector("[data-x-avatar]").alt;
+        modalTitle.innerHTML = this.querySelector("[data-x-title]").innerHTML;
+        modalText.innerHTML = this.querySelector("[data-x-text]").innerHTML;
 
-for (let i = 0; i < filterBtn.length; i++) {
+        xModalFunc();
 
-  filterBtn[i].addEventListener("click", function () {
+      });
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
     }
 
-  });
-}
+    // add click event to modal close button
+    modalCloseBtn.addEventListener("click", xModalFunc);
+    overlay.addEventListener("click", xModalFunc);
 
 
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+    // custom select variables
+    const select = document.querySelector("[data-select]");
+    const selectItems = document.querySelectorAll("[data-select-item]");
+    const selectValue = document.querySelector("[data-selecct-value]");
+    const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+    select.addEventListener("click", function () { elementToggleFunc(this); });
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+    // add event in all select items
+    for (let i = 0; i < selectItems.length; i++) {
+      selectItems[i].addEventListener("click", function () {
+
+        let selectedValue = this.innerText.toLowerCase();
+        selectValue.innerText = this.innerText;
+        elementToggleFunc(select);
+        filterFunc(selectedValue);
+
+      });
+    }
+
+    // filter variables
+    const filterItems = document.querySelectorAll("[data-filter-item]");
+
+    const filterFunc = function (selectedValue) {
+
+      for (let i = 0; i < filterItems.length; i++) {
+
+        if (selectedValue === "all") {
+          filterItems[i].classList.add("active");
+        } else if (selectedValue === filterItems[i].dataset.category) {
+          filterItems[i].classList.add("active");
+        } else {
+          filterItems[i].classList.remove("active");
+        }
+
       }
+
     }
 
-  });
-}
+    // add event in all filter button items for large screen
+    let lastClickedBtn = filterBtn[0];
+
+    for (let i = 0; i < filterBtn.length; i++) {
+
+      filterBtn[i].addEventListener("click", function () {
+
+        let selectedValue = this.innerText.toLowerCase();
+        selectValue.innerText = this.innerText;
+        filterFunc(selectedValue);
+
+        lastClickedBtn.classList.remove("active");
+        this.classList.add("active");
+        lastClickedBtn = this;
+
+      });
+
+    }
+
+
+
+    // contact form variables
+    const form = document.querySelector("[data-form]");
+    const formInputs = document.querySelectorAll("[data-form-input]");
+    const formBtn = document.querySelector("[data-form-btn]");
+
+    // add event to all form input field
+    for (let i = 0; i < formInputs.length; i++) {
+      formInputs[i].addEventListener("input", function () {
+
+        // check form validation
+        if (form.checkValidity()) {
+          formBtn.removeAttribute("disabled");
+        } else {
+          formBtn.setAttribute("disabled", "");
+        }
+
+      });
+    }
+
+
+
+    // page navigation variables
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    // add event to all nav link
+    for (let i = 0; i < navigationLinks.length; i++) {
+      navigationLinks[i].addEventListener("click", function () {
+
+        for (let i = 0; i < pages.length; i++) {
+          if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+            pages[i].classList.add("active");
+            navigationLinks[i].classList.add("active");
+            window.scrollTo(0, 0);
+          } else {
+            pages[i].classList.remove("active");
+            navigationLinks[i].classList.remove("active");
+          }
+        }
+
+      });
+    }
 
   </script>
 
