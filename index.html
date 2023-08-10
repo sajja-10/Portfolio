@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sajja's Portfolio</title>
-  
+  <title>Sajja's Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+
 
 
   <!--
@@ -14,10 +16,7 @@
   -->
   <link rel="shortcut icon" href="./assets/image/sajja_icon.png" type="image/png">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+
 
   <!--
     - google font link
@@ -44,7 +43,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/image/IMG_4536.png" alt="Sajja Regmi" width="80">
+          <img src="./assets/image/sajja.png" alt="Sajja Regmi" width="80">
         </figure>
 
         <div class="info-content">
@@ -81,34 +80,21 @@
 
           </li>
 
+
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Location</p>
 
-              <time datetime="2004-12-08">December 08, 2004</time>
+              <address>Gandaki, Nepal</address>
             </div>
 
           </li>
 
-            <li class="contact-item">
-  
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-  
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-  
-                <address>Kushma, Gandaki, Nepal</address>
-              </div>
-  
-            </li>
-  
         </ul>
 
         <div class="separator"></div>
@@ -116,25 +102,25 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://github.com/sajja-10" class="social-link">
+            <a href="https://github.com/sajja-10" target="_blank" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=100071606455591" class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100071606455591" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/sajja-regmi-094452281/" class="social-link">
+            <a href="https://www.linkedin.com/in/sajja-regmi-094452281/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin" alt="Sajja"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/sajja_102/" class="social-link">
+            <a href="https://www.instagram.com/sajja_102/" target="_blank" class="social-link">
               <ion-icon name="logo-instagram" alt="Don"></ion-icon>
             </a>
           </li>
@@ -160,7 +146,6 @@
       -->
 
       <nav class="navbar">
-
         <ul class="navbar-list">
 
           <li class="navbar-item">
@@ -172,7 +157,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Works</button>
           </li>
 
           <li class="navbar-item">
@@ -182,7 +167,6 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
 
         </ul>
 
@@ -201,8 +185,8 @@
 
         <section class="about-text">
           <p>
-            I'm a computer enthusiast from Nepal.
-            I enjoy seeking rational solutions to real-world problems.
+            Hi there! I'm a computer aficionado, driven by an unwavering passion for solving problems and a deep
+            appreciation for the beauty of mathematics.
 
           </p>
 
@@ -210,82 +194,174 @@
 
 
         <!--
-          - service
+          - doing
         -->
 
-        <section class="service">
+        <section class="doing">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h2 class="h2 doing-title">What i'm doing</h2>
 
-          <ul class="service-list">
+          <ul class="doing-list">
 
-            <li class="service-item">
+            <li class="doing-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/image/python.png"
-                  alt="design icon" width="40">
+              <div class="doing-icon-box">
+                <img src="./assets/image/python.png" alt="design icon" width="40">
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Python</h4>
+              <div class="doing-content-box">
+                <h4 class="h4 doing-item-title">Python</h4>
 
-                <p class="service-item-text">
-                  One of the most common programming language for web and app development.
+                <p class="doing-item-text">
+                  Developing Python projects focused on extracting data through web scraping.
                 </p>
               </div>
 
             </li>
 
-            <li class="service-item">
+            <li class="doing-item">
 
-              <div class="service-icon-box">
+              <div class="doing-icon-box">
                 <img src="./assets/image/obsidian.png" alt="design icon" width="40">
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Obsidian</h4>
+              <div class="doing-content-box">
+                <h4 class="h4 doing-item-title">Obsidian</h4>
 
-                <p class="service-item-text">
-                  On the way to make my second brain.
+                <p class="doing-item-text">
+                  Embarking on the journey to forge my second brain within Obsidian.
                 </p>
               </div>
 
             </li>
 
-            <li class="service-item">
+            <li class="doing-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/image/git.png" alt="design icon" width="40">
+              <div class="doing-icon-box">
+                <img src="./assets/image/git.png" alt="git icon" width="40">
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">GIT</h4>
+              <div class="doing-content-box">
+                <h4 class="h4 doing-item-title">GIT</h4>
 
-                <p class="service-item-text">
-                  Hosting my website and storing various topics notes.
+                <p class="doing-item-text">
+                  Hosting my website and using repositories for notes on diverse subjects."
                 </p>
               </div>
 
             </li>
+            <li class="doing-item">
+
+
+              <div class="doing-icon-box">
+                <img src="./assets/image/menstrual cup.jpg" alt="cup" width="40">
+              </div>
+              <div class="doing-content-box">
+                <h4 class="h4 doing-item-title">Mensuration</h4>
+
+                <p class="doing-item-text">
+                  Advancing sustainable menstrual hygiene by raising awareness about menstrual cups in rural Nepal.
+                </p>
+              </div>
+            </li>
+
 
           </ul>
 
         </section>
+        <!--
+        - #Avocations
+      -->
+
+        <section class="activity">
+
+          <h3 class="h3 activity-title">Avocations</h3>
+
+          <ul class="activity-list">
+
+            <li class="activity-item ">
+
+              <div class="activity-icon-box">
+                <img src="./assets/images/sketch.png" alt="Sketch" width="40">
+              </div>
+
+              <div class="activity-content-box">
+                <h4 class="h4 activity-item-title">Sketch</h4>
+
+                <p class="activity-item-text">
+                  With my pencil as a magic wand, I conjure random portraits that tickle the funny bone, leaving
+                  unsuspecting folks both laughing and bewildered by the unexpected artistry before them.
+                </p>
+              </div>
+            </li>
+
+            <li class="activity-item  active">
+              <div class="activity-icon-box">
+                <img src="./assets/image/uku.jpg" alt="Ukulele" width="40">
+              </div>
+
+              <div class="activity-content-box">
+                <h4 class="h4 activity-item-title">Ukulele</h4>
+                <p class="activity-item-text">
+                  I allow my fingers to glide across the strings, weaving a musical tapestry that serenades the world
+                  alongside my one-of-a-kind voice. The harmonious fusion of sound and soul crafts an enchanting
+                  experience that continually fills me with wonder.
+              </div>
+            </li>
 
 
-        <div class="modal-container" data-modal-container>
+            <li class="activity-item  active">
+              <div class="activity-icon-box">
+                <img src="./assets/images/photography.jpg" alt="Photography" width="40">
+              </div>
+              <div class="activity-content-box">
+                <h4 class="h4 activity-item-title">Photography</h4>
+                <p class="activity-item-text">
+                  Armed with nothing more than my trusty android phone, I capture the very essence of nature's beauty
+                  and the spontaneous delight of candid moments.
+                </p>
+              </div>
+            </li>
 
-          <div class="overlay" data-overlay></div>
-          <section class="x-modal">
+            <li class="activity-item  active">
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+              <div class="activity-icon-box">
+                <img src="./assets/image/spanish.jpg" alt="Spanish" width="40">
+              </div>
+              <div class="activity-content-box">
+                <h4 class="h4 activity-item-title">Spanish</h4>
+                <p class="activity-item-text">
+                  Learning Spanish is a passion I'm nurturing as a beginner, and every word I learn feels like a step toward a richer world of connections and understanding.
+                </p>
+              </div>
+            </li>
 
-          </section>
+            <li class="activity-item  active">
+              <div class="activity-icon-box">
+                <img src="./assets/image/traveling.jpg" alt="Travel" width="40">
+              </div>
+              <div class="activity-content-box">
+                <h4 class="h4 activity-item-title">Travelling</h4>
+                <p class="activity-item-text">
+                  Exploring new destinations isn't just my hobby; it's my way of finding solace and harmony. The inner
+                  and outer peace that echoes through each new place I visit helps me forge a deep and meaningful
+                  connection with the world around me.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-        </div>
 
+      </article>
+
+
+
+
+
+      <div class="overlay" data-overlay></div>
+      <button class="modal-close-btn" data-modal-close-btn>
+      </button>
 
       </article>
 
@@ -365,35 +441,24 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Home Tutor</h4>
-
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-                Taught Maths and Science to a grade nine student.
-              </p>
-
-            </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Python Developer</h4>
               <span>2023 — present</span>
               <p class="timeline-text">
-                Making a project
+                Webscraping using BeautifulSoup and Scrapy.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Programmer</h4>
 
               <span>2023 — Present</span>
 
               <p class="timeline-text">
-                Making a plugin in obsidian.
+                Creating a comprehensive obsidian plugin featuring daily, weekly, monthly, quarterly, and yearly review functionalities.
               </p>
 
             </li>
@@ -412,28 +477,14 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">50%</data>
+                <h5 class="h5">HTML</h5>
+                <data value="50">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
 
             <li class="skills-item">
 
@@ -441,42 +492,46 @@
                 <h5 class="h5">Obsidian</h5>
                 <data value="70">50%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 50%;"></div>
               </div>
+            </li>
 
             </li>
             <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5">Python</h5>
-                <data value="90">70%</data>
+                <data value="90">40%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" style="width: 40%;"></div>
               </div>
 
             </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-                <data value="50">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
 
             </li>
             <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5">GIT</h5>
-                <data value="50">40%</data>
+                <data value="50">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="90">50%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -500,10 +555,10 @@
         - #Works
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="works" data-page="works">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Works</h2>
         </header>
 
         <section class="projects">
@@ -519,12 +574,9 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Research Paper</button>
+              <button data-filter-btn>Review Paper</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Campaign</button>
-            </li>
 
           </ul>
 
@@ -551,11 +603,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Research Paper</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Campaign</button>
+                <button data-select-item>Review Paper</button>
               </li>
 
             </ul>
@@ -564,7 +612,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="research paper">
+            <li class="project-item  active" data-filter-item data-category="review paper">
               <a href="#">
 
                 <figure class="project-img">
@@ -574,25 +622,24 @@
                   <img src="./assets/image/ai_brain.jpg" alt="neuroscience" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">AI in Neuroscience</h3>
+                <h3 class="project-title">Impacts of Nerocomputing in AI</h3>
 
-                <p class="project-category">Research paper</p>
+                <p class="project-category">Review paper</p>
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="campaign">
+            <li class="project-item  active" data-filter-item data-category="review paper">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/image/Waste.jpg" alt="Waste" loading="lazy">
+                  <img src="./assets/images/iot.jpeg" alt="Agriculture" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Waste Management Initiative</h3>
-
-                <p class="project-category">Campaign</p>
+                <h3 class="project-title">Wireless Sensor Networks: Enhancing Agriculture through Precision Environmental Monitoring</h3>
+                <p class="project-category">Review paper</p>
 
               </a>
             </li>
@@ -619,20 +666,15 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="./assets/blog/House.html"
-              <link href="#">
+              <a href="new.html">
                 <figure class="blog-banner-box">
                   <img src="./assets/image/House.jpg" alt=" Gap Year" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Personal
-                      <time datetime="2023-07-05">July 05, 2023</time>
-                    </p>
-                  </div>
-
+                    <p class="blog-category">Personal</p>
+                </div>
                   <h3 class="h3 blog-item-title">Unexpected Lessons</h3>
 
                   <p class="blog-text">
@@ -655,6 +697,7 @@
 
 
 
+
       <!--
         - #CONTACT
       -->
@@ -663,7 +706,7 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Any Feedbacks?</h2>
         </header>
 
         <section class="contact-form">
@@ -698,13 +741,9 @@
 
 
 
-  ]
+  <script src="script.js">
 
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  </script>
 
   <!--
     - ionicon link
