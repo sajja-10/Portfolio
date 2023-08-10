@@ -802,9 +802,6 @@ main {
 #WORKS
 \*-----------------------------------*/
 
-.filter-list {
-  display: none;
-}
 
 .filter-select-box {
   position: relative;
@@ -1583,16 +1580,6 @@ textarea.form-input::-webkit-resizer {
 
   .filter-select-box {
     display: block;
-  }
-
-  .filter-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-    padding-left: 5px;
-    margin-bottom: 30px;
-    opacity: 1;
   }
 
   .filter-item button {
