@@ -812,7 +812,7 @@ main {
 
 .filter-select {
   background:  --white-2 hsl(0, 0%, 98%);
-  color: --eerie-black-2 hsl(240, 2%, 12%);;
+  color: --eerie-black-2 hsl(240, 2%, 12%);
   display: flex;
   justify-content: space-between;
   align-items: center;
