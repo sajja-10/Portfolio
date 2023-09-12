@@ -1707,15 +1707,15 @@ textarea.form-input::-webkit-resizer {
  * RESET
  */
 
-  body::-webkit-scrollbar {
+  body::-scrollbar {
     width: 20px;
   }
 
-  body::-webkit-scrollbar-track {
+  body::-scrollbar-track {
     background: white;
   }
 
-  body::-webkit-scrollbar-thumb {
+  body::-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
@@ -1723,11 +1723,11 @@ textarea.form-input::-webkit-resizer {
       inset -1px -1px 0 hsla(0, 1%, 66%, 0.11);
   }
 
-  body::-webkit-scrollbar-thumb:hover {
+  body::-scrollbar-thumb:hover {
     background: white blue;
   }
 
-  body::-webkit-scrollbar-button {
+  body::-scrollbar-button {
     height: 60px;
   }
 
