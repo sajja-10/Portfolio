@@ -1,15 +1,6 @@
 :root {
 
   /**
- * copyright 2022 @codewithsadee
- */
-
-  /*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-
-  /**
  * colors
  */
 
@@ -1712,10 +1703,14 @@ textarea.form-input::-webkit-resizer {
 */
 
 @media (min-width: 1250px) {
-
   /**
- * RESET
- */
+   * RESET
+   */
+
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--smoky-black) hsla(0, 0%, 100%, 0.1);
+  }
 
   body::-webkit-scrollbar {
     width: 20px;
@@ -1741,11 +1736,9 @@ textarea.form-input::-webkit-resizer {
     height: 60px;
   }
 
-
-
   /**
- * REUSED STYLE
- */
+   * REUSED STYLE
+   */
 
   .sidebar,
   article {
@@ -1756,11 +1749,9 @@ textarea.form-input::-webkit-resizer {
     min-height: 100%;
   }
 
-
-
   /**
- * MAIN
- */
+   * MAIN
+   */
 
   main {
     max-width: 1200px;
@@ -1777,11 +1768,9 @@ textarea.form-input::-webkit-resizer {
     margin: 0;
   }
 
-
-
   /**
- * SIDEBAR
- */
+   * SIDEBAR
+   */
 
   .sidebar {
     position: sticky;
@@ -1843,8 +1832,6 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
-
-
   /**
    * RESUME
    */
@@ -1852,5 +1839,5 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 500px;
   }
-
 }
+
