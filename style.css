@@ -1,6 +1,15 @@
 :root {
 
   /**
+ * copyright 2022 @codewithsadee
+ */
+
+  /*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+
+  /**
  * colors
  */
 
@@ -938,7 +947,7 @@ color:aliceblue}
 .project-title {
   color: black;
   font-size: var(--fs-5);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-600);
   text-transform: capitalize;
   line-height: 1.3;
 }
