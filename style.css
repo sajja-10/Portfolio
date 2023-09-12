@@ -887,8 +887,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background:transparent;
   z-index: 1;
   transition: var(--transition-1);
@@ -898,6 +898,7 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
+
   background:  --white-2 hsl(0, 0%, 98%);
   color: --eerie-black-2 hsl(240, 2%, 12%); 
   position: absolute;
@@ -937,7 +938,7 @@ color:aliceblue}
 .project-title {
   color: black;
   font-size: var(--fs-5);
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-400);
   text-transform: capitalize;
   line-height: 1.3;
 }
