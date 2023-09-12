@@ -32,7 +32,7 @@
         }
         .credit{
             text-align: center;
-            font-size: 14px;
+            font-size: 9px;
         }
         .credit-container {
             text-align: center;
@@ -54,9 +54,14 @@
         .responsive-image {
             max-width: 100% ;
             padding:10px;
-            
-            
         }
+
+        .image-credit-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
 
         @media (max-width: 580px) {
             .container {
@@ -100,10 +105,10 @@
         <div class="blog-post">
 
             <h2>Village Life and the Rhythms of Rain</h2>
-            <a href="#">
-                <img class="responsive-image" src="/assets/image/rain.jpg" alt="Large Image">
-            </a>
-           <div class="credit-container">
+            <div class="image-credit-container">
+                <a href="#">
+                    <img class="responsive-image" src="/assets/image/rain.jpg" alt="Large Image">
+                </a>
                 <div class="credit">
                     <p>Image credit: HEART FACES</p>
                 </div>
