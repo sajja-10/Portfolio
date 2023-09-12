@@ -837,7 +837,7 @@ main {
   z-index: 2;
   opacity: 1;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: all;
   transition: 0.15s ease-in-out;
 }
 
