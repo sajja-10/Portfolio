@@ -157,3 +157,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+function openLink() {
+  window.open("https://github.com/sajja-10/Plugin", "_blank");
+}
