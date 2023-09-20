@@ -121,7 +121,7 @@ const formBtn = document.querySelector("[data-form-btn]");
 // add event to the form submit button
 formBtn.addEventListener("click", function () {
     // Open the user's default email client with the pre-filled email
-    location.href = "mailto:recipient@example.com" +
+    location.href = "mailto:sajjaregmi4@gmail.com" +
         "?subject=Feedback" +
         "&body=Full Name: " + form.elements.fullname.value + "%0D%0A" +
         "Email: " + form.elements.email.value + "%0D%0A" +
