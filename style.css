@@ -129,7 +129,7 @@ textarea {
 
 body {
   background: RGB(255, 255, 255);
-  color: RGB(0, 0, 0)
+  color: RGB(0, 0, 0);
   font-family: var(--font-family);
 }
 
