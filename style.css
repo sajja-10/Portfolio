@@ -497,7 +497,13 @@ main {
   color: var(--light-black-70);
 }
 
+[data-page] {
+    display: none;
+}
 
+[data-page].active {
+    display: block;
+}
 
 
 
