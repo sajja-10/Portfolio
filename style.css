@@ -863,7 +863,7 @@ main {
 
 .project-item.active {
   display: block;
-  animation: scaleUp 0.25s ease forwards;
+  animation: scaleUp 0.05s ease forwards;
 }
 
 @keyframes scaleUp {
@@ -1000,7 +1000,7 @@ color:aliceblue}
 }
 
 .blog-post-item > a:hover .blog-banner-box img {
-  transform: scale(1.1);
+  transform: scale(0.8);
 }
 
 .blog-content {
