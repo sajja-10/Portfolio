@@ -986,7 +986,7 @@ color:aliceblue}
 
 .blog-banner-box {
   width: 100%;
-  height: 200px;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
 }
