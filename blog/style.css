@@ -63,7 +63,7 @@ p {
 
 
 
-@media (min-width: 450px) {
+@media (max-width: 450px) {
     :root {
         --fs-1: 17px;
         --fs-2: 15px;
@@ -88,7 +88,7 @@ p {
 
 
 
-@media (min-width: 580px) {
+@media (max-width: 580px) {
     :root {
         --fs-1: 18px;
         --fs-2: 16px;
@@ -113,7 +113,7 @@ p {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     :root {
         --fs-1: 20px;
         --fs-2: 18px;
@@ -137,7 +137,7 @@ p {
     }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     :root {
         --fs-1: 22px;
         --fs-2: 20px;
@@ -161,7 +161,7 @@ p {
     }
 }
 
-@media (min-width: 1250px) {
+@media (max-width: 1250px) {
     :root {
         --fs-1: 24px;
         --fs-2: 22px;
