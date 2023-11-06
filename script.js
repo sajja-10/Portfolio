@@ -138,7 +138,7 @@ const pages = document.querySelectorAll("[data-page]");
 
 // Object to map data-nav-link to page URLs
 const pageURLs = {
-    "about": "https://sajjaregmi.com.np/",
+    "about": "https://sajjaregmi.com.np/about",
     "resume": "https://sajjaregmi.com.np/resume",
     "works": "https://sajjaregmi.com.np/works",
     "blog": "https://sajjaregmi.com.np/blog",
