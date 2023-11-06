@@ -499,16 +499,13 @@ main {
   color: var(--light-black-70);
 }
 
-[data-page] {
-    display: none;
+article {
+  display: none; 
 }
 
-[data-page].active {
-    display: block;
+article.active {
+  display: block; 
 }
-
-
-
 
 
 
