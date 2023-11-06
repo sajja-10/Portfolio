@@ -60,7 +60,7 @@ p {
     align-items: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 580px) {
     :root {
         --fs-1: 17px;
         --fs-2: 15px;
@@ -84,7 +84,7 @@ p {
 }
 
 
-@media (max-width: 580px) {
+@media (min-width: 580px) {
     :root {
         --fs-1: 17px;
         --fs-2: 15px;
@@ -110,7 +110,7 @@ p {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     :root {
         --fs-1: 20px;
         --fs-2: 18px;
@@ -119,13 +119,13 @@ p {
     }
 
     .container {
-        max-width: 80%;
+        max-width: 100%;
         padding: 16px;
 
     }
 
     .blog-post {
-        padding: 20px;
+        padding: 18px;
     }
 
     .responsive-image {
@@ -134,7 +134,7 @@ p {
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     :root {
         --fs-1: 22px;
         --fs-2: 20px;
@@ -144,7 +144,7 @@ p {
 
 
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         padding: 20px;
     }
 
@@ -160,7 +160,7 @@ p {
 
 
 
-@media (max-width: 1250px) {
+@media (min-width: 1250px) {
     :root {
         --fs-1: 24px;
         --fs-2: 22px;
@@ -169,7 +169,7 @@ p {
     }
 
     .container {
-        max-width: 1000px;
+        max-width: 1200px;
         padding: 24px;
     }
 
