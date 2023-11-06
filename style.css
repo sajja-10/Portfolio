@@ -499,13 +499,7 @@ main {
   color: var(--light-black-70);
 }
 
-article {
-  display: none; 
-}
 
-article.active {
-  display: block; 
-}
 
 
 
