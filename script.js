@@ -129,14 +129,12 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 
-// page navigation variables
 'use strict';
 
-// page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
+const pageStack = [];
 
-// Object to map data-nav-link to page URLs
 const pageURLs = {
     "about": "https://sajjaregmi.com.np/about",
     "resume": "https://sajjaregmi.com.np/resume",
@@ -145,9 +143,38 @@ const pageURLs = {
     "contact": "https://sajjaregmi.com.np/contact"
 };
 
-// Add event to all nav links
+function loadContent(url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('content').innerHTML = html;
+        })
+        .catch(error => console.log('Error fetching content: ', error));
+}
+
+function activateDefaultPage() {
+    const defaultPage = 'about';
+    for (let j = 0; j < pages.length; j++) {
+        if (pages[j].dataset.page === defaultPage) {
+            pages[j].classList.add("active");
+            navigationLinks[j].classList.add("active");
+        } else {
+            pages[j].classList.remove("active");
+            navigationLinks[j].classList.remove("active");
+        }
+    }
+
+    loadContent(pageURLs[defaultPage]);
+    history.pushState({ page: defaultPage }, null, `${defaultPage}`);
+    pageStack.push(defaultPage);
+}
+
+activateDefaultPage(); 
+
 for (let i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function () {
+    navigationLinks[i].addEventListener("click", function (event) {
+        event.preventDefault();
+
         const link = this.getAttribute("data-nav-link");
 
         for (let j = 0; j < pages.length; j++) {
@@ -161,18 +188,37 @@ for (let i = 0; i < navigationLinks.length; i++) {
             }
         }
 
-        // Load content from the specified URL
+        if (!pageStack.includes(link)) {
+            pageStack.push(link);
+        }
+
         loadContent(pageURLs[link]);
+        history.pushState({ page: link }, null, `${link}`);
     });
 }
 
-// Function to load content from a specific URL
-function loadContent(url) {
-    // Fetch content and update the page
-    fetch(url)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('content').innerHTML = html;
-        })
-        .catch(error => console.log('Error fetching content: ', error));
-}
+window.addEventListener('popstate', function (event) {
+    if (event.state && event.state.page) {
+        const link = event.state.page;
+
+        for (let j = 0; j < pages.length; j++) {
+            if (pages[j].dataset.page === link) {
+                pages[j].classList.add("active");
+                navigationLinks[j].classList.add("active");
+                window.scrollTo(0, 0);
+            } else {
+                pages[j].classList.remove("active");
+                navigationLinks[j].classList.remove("active");
+            }
+        }
+
+        loadContent(pageURLs[link]);
+
+        const currentPageIndex = pageStack.indexOf(link);
+        if (currentPageIndex !== -1) {
+            pageStack.splice(currentPageIndex, 1);
+        }
+    }
+});
+
+
