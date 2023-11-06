@@ -60,7 +60,7 @@ p {
     align-items: center;
 }
 
-@media (max-width: 580px) {
+@media (min-width:0px and max-width: 580px) {
     :root {
         --fs-1: 17px;
         --fs-2: 15px;
@@ -144,7 +144,7 @@ p {
 
 
     .container {
-        max-width: 120%;
+        max-width: 110%;
         padding: 20px;
     }
 
@@ -169,7 +169,7 @@ p {
     }
 
     .container {
-        max-width: 150%;
+        max-width: 120%;
         padding: 24px;
     }
 
