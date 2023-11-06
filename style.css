@@ -969,7 +969,7 @@ color:aliceblue}
 
 .blog-posts-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -1006,9 +1006,7 @@ color:aliceblue}
 }
 
 .blog-post-item > a:hover .blog-banner-box img {
-   --scale: 0.8;
-  transform: translate(-50%, -50%) scale(var(--scale));
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
 }
 
 .blog-content {
