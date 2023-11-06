@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 18px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -144,7 +144,7 @@ p {
 
 
     .container {
-        max-width: 1000px;
+        max-width: 120%;
         padding: 20px;
     }
 
@@ -169,7 +169,7 @@ p {
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 150%;
         padding: 24px;
     }
 
