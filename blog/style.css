@@ -18,6 +18,11 @@ body {
     font-size: var(--fs-2);
 }
 
+img{
+    color: black;
+    text-align: center;
+  }
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -60,7 +65,7 @@ p {
     align-items: center;
 }
 
-@media (min-width:0px and max-width: 580px) {
+@media (min-width:0px) {
     :root {
         --fs-1: 17px;
         --fs-2: 15px;
