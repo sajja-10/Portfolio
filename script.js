@@ -1,11 +1,43 @@
 'use strict';
 
+// Load the EmailJS SDK
+(function() {
+  let script = document.createElement("script");
+  script.src = "https://cdn.emailjs.com/dist/email.min.js";
+  script.onload = () => emailjs.init("F0GVFJSiK_iUMCKwd");  
+  document.body.appendChild(script);
+})();
+
+
+// Function to send email using EmailJS
+function sendEmail(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_zd52ln9', 'template_es9h3me', event.target)
+    .then(function() {
+      window.location.href = 'thank_you.html';
+    }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send message.');
+    });
+}
+
+// Enable the submit button after EmailJS has loaded
+document.addEventListener("DOMContentLoaded", function() {
+  const formBtn = document.querySelector("[data-form-btn]");
+  formBtn.removeAttribute("disabled");
+});
+
+// Assign the form submission event
+const contactForm = document.querySelector("#contact-form");  
+if (contactForm) {
+  contactForm.onsubmit = sendEmail;
+}
 
 
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
 
 
 // sidebar variables
